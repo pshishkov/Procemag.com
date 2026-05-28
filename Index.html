@@ -53,6 +53,7 @@
         .logo-img  { width: 130px; height: auto; margin-right: 0.5rem; }
         .logo-text { font-size: 1.5rem; font-weight: 800; color: var(--primary); letter-spacing: -0.5px; }
         .logo-dot  { color: var(--dark); }
+        .btn-short { display: none; }
 
         nav {
             display: flex;
@@ -568,6 +569,13 @@
             nav a:last-child { border-bottom: none; }
             .hamburger { display: flex; }
 
+            /* Header */
+            .nav-container { padding: 0.7rem 1rem; }
+            .logo-text { display: none; }
+            .logo-img  { width: 110px; }
+            .btn-long  { display: none; }
+            .btn-short { display: inline; }
+
             /* Hero stacks */
             .hero-container { flex-direction: column; gap: 2.5rem; }
             .hero-text { flex: none; width: 100%; text-align: center; }
@@ -618,7 +626,7 @@
             </nav>
             <div class="nav-actions">
                 <button id="langToggle" class="btn small" aria-label="Toggle language">EN</button>
-                <button id="oldBtn"     class="btn small" aria-label="Old version">Old version</button>
+                <button id="oldBtn"     class="btn small" aria-label="Old version"><span class="btn-long">Old version</span><span class="btn-short">Old</span></button>
                 <button id="hamburgerBtn" class="hamburger" aria-label="Toggle menu">
                     <span></span><span></span><span></span>
                 </button>
